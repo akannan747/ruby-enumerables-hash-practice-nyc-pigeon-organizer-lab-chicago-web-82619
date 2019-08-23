@@ -6,9 +6,9 @@ def nyc_pigeon_organizer(data)
           hash[pigeon] = {}
         end
         if hash[pigeon][features]
-          hash[pigeon][features].push(feature)
+          hash[pigeon][features].push("#{feature}")
         else
-          hash[pigeon][features] = [feature]
+          hash[pigeon][features] = ["#{feature}"]
         end
         hash
       }
